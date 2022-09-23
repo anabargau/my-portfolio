@@ -1,4 +1,5 @@
 import React from 'react';
+import uniqid from 'uniqid';
 import Project from './Project';
 
 function Projects() {
@@ -160,6 +161,7 @@ function Projects() {
       <div className="projects-container">
         {projectsArray.map((project) => (
           <Project
+            key={uniqid()}
             liveUrl={project.liveUrl}
             codeUrl={project.codeUrl}
             name={project.name}

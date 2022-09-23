@@ -13,7 +13,10 @@ function Skillset() {
           src="https://gistcdn.githack.com/anabargau/3aeb2707141cbfe084f8d9c966da4cec/raw/f70ae26163ebb44cb0d3abf5809507d78bdcbd0e/react.svg"
           alt="react"
         />
-        <img src="https://i.ibb.co/KrMgFxz/router.png" alt="react router" />
+        <img
+          src="https://i.postimg.cc/qR0hrNPZ/router.png"
+          alt="react router"
+        />
         <img
           src="https://gistcdn.githack.com/anabargau/9e43c99175213a731a57c1fad8e571cd/raw/8e9c8014a9211a7c4032e67476138ac5e38e8e39/html.svg"
           alt="html"
@@ -38,7 +41,7 @@ function Skillset() {
           src="https://gistcdn.githack.com/anabargau/9c7199e644c7133364a3a509e7ed074f/raw/2f5437595b27127e352edea0040436f8d5e09df5/sql.svg"
           alt="sql"
         />
-        <img src="https://i.ibb.co/QF9PrW4/jest.webp" alt="jest" />
+        <img src="https://i.postimg.cc/hGVzNL5d/jest.webp" alt="jest" />
         <img
           src="https://gist.githubusercontent.com/anabargau/24ff4a90187392fa91491edca3750d79/raw/47bdf8733874cec083ae113bda150f4a1b620ff7/npm.svg"
           alt="npm"

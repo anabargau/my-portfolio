@@ -6,7 +6,7 @@ function Project(props) {
     <div className="project">
       <div className="project-info">
         <div className="project-title">{name}</div>
-        <div className="project-description"></div>
+        <div className="project-description">{description}</div>
       </div>
       <div className="link-btns">
         <button>
