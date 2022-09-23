@@ -63,42 +63,48 @@ function Projects() {
       liveUrl: 'https://anabargau.github.io/my-library/',
       codeUrl: 'https://github.com/anabargau/my-library',
       name: 'My Library',
-      descritpion: '',
+      descritpion:
+        'A library app that helps you keep track of the books you read or maybe want to read.',
       js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/restaurant-page/',
       codeUrl: 'https://github.com/anabargau/restaurant-page',
       name: 'Restaurant Page',
-      descritpion: '',
+      descritpion:
+        'A simple site for your restaurant that provides a homepage, a page for your delicious menu and a contact page.',
       js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/tic-tac-toe-JS/',
       codeUrl: 'https://github.com/anabargau/tic-tac-toe-JS',
       name: 'Tic-Tac-Toe(JS)',
-      descritpion: '',
+      descritpion:
+        'The classic Tic-Tac-Toe game that you can play alone or with your friends when you are bored.',
       js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/calculator/',
       codeUrl: 'https://github.com/anabargau/calculator',
       name: 'Calculator',
-      descritpion: '',
+      descritpion:
+        'A simple calculator that does basic math operations and which will be a great help in times of need.',
       js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/etch-a-sketch/',
       codeUrl: 'https://github.com/anabargau/etch-a-sketch',
       name: 'Etch a Sketch',
-      descritpion: '',
+      descritpion:
+        'A sketchpad on which you can draw masterpieces with any color that your heart desires. The possibilities are endless!',
       js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/rock-paper-scissors/',
       codeUrl: 'https://github.com/anabargau/rock-paper-scissors',
       name: 'Rock-Paper-Scissors',
-      descritpion: '',
+      descritpion:
+        'The well known game of rock-paper-scissors, this time played in a chat with Doris. Think you can beat her?',
       js: true,
     },
     {
@@ -112,35 +118,39 @@ function Projects() {
       liveUrl: 'https://replit.com/@anabananaa/Chess#main.rb',
       codeUrl: 'https://github.com/anabargau/chess',
       name: 'Chess',
-      descritpion: '',
+      descritpion:
+        'You can now play the complex game of chess in the comfort of your own console. Think you are good enough?',
       js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Tic-Tac-Toe#main.rb',
       codeUrl: 'https://github.com/anabargau/tic-tac-toe-ruby',
       name: 'Tic-Tac-Toe(Ruby)',
-      descritpion: '',
+      descritpion:
+        'The classic tic-tac-toe game, now written in Ruby for a change.',
       js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Mastermind#main.rb',
       codeUrl: 'https://github.com/anabargau/mastermind',
       name: 'Mastermind',
-      descritpion: '',
+      descritpion:
+        'Mastermind, the challenging game of logic and deduction. Do you think you can crack the code? You can be the codebreaker or the codemaker.',
       js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Hangman#main.rb',
       codeUrl: 'https://github.com/anabargau/hangman',
       name: 'Hangman',
-      descritpion: '',
+      descritpion: 'Test your vocabulary with this fun game of Hangman.',
       js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Connect-Four#main.rb',
       codeUrl: 'https://github.com/anabargau/connect-four',
       name: 'Connect-Four',
-      descritpion: '',
+      descritpion:
+        'The original vertical four-in-a-row checkers game. Come play with your friends!',
       js: false,
     },
   ];
