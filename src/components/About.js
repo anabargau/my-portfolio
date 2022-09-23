@@ -7,7 +7,7 @@ function About() {
       <img className="about-img" src={ProfilePicture} alt="profile" />
       <div className="about-info">
         <div className="about-title">About Me</div>
-        <div className="about-info">
+        <div className="about-description">
           Hi! My name is Ana, I am an ex-neurologist and an aspiring front-end
           developer.
         </div>

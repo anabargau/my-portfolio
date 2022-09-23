@@ -7,7 +7,7 @@ import Skillset from './components/Skillset';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Nav />
       <About />
       <Skillset />
