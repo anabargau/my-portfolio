@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import uniqid from 'uniqid';
 import Project from './Project';
 
-function Projects() {
+const Projects = forwardRef((props, ref) => {
   const projectsArray = [
     {
       liveUrl: 'https://anabargau.github.io/phototagging-app/',
@@ -175,7 +175,7 @@ function Projects() {
     },
   ];
   return (
-    <section className="work">
+    <section className="work" ref={ref}>
       <div className="work-title">My Work</div>
       <div className="projects-container">
         {projectsArray.map((project) => (
@@ -184,6 +184,6 @@ function Projects() {
       </div>
     </section>
   );
-}
+});
 
 export default Projects;

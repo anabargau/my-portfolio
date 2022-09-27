@@ -12,22 +12,22 @@ function Project(props) {
           <button>
             <a href={project.codeUrl} target="_blank" rel="noreferrer">
               View Code
+              <img
+                src="https://gistcdn.githack.com/anabargau/b1f176374d30e4ad3c54f68f0c11110e/raw/8d04d9f0eedc7872fbd07a39dc8dcdb313722ea5/arrow.svg"
+                alt="arrow"
+                className="link-icon"
+              />
             </a>
-            <img
-              src="https://gistcdn.githack.com/anabargau/b1f176374d30e4ad3c54f68f0c11110e/raw/8d04d9f0eedc7872fbd07a39dc8dcdb313722ea5/arrow.svg"
-              alt="arrow"
-              className="link-icon"
-            />
           </button>
           <button>
             <a href={project.liveUrl} target="_blank" rel="noreferrer">
               Live Site
+              <img
+                src="https://gistcdn.githack.com/anabargau/b1f176374d30e4ad3c54f68f0c11110e/raw/8d04d9f0eedc7872fbd07a39dc8dcdb313722ea5/arrow.svg"
+                alt="arrow"
+                className="link-icon"
+              />
             </a>
-            <img
-              src="https://gistcdn.githack.com/anabargau/b1f176374d30e4ad3c54f68f0c11110e/raw/8d04d9f0eedc7872fbd07a39dc8dcdb313722ea5/arrow.svg"
-              alt="arrow"
-              className="link-icon"
-            />
           </button>
         </div>
       </div>

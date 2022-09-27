@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import uniqid from 'uniqid';
 import Skill from './Skill';
 
-function Skillset() {
+const Skillset = forwardRef((props, ref) => {
   const skillsArray = [
     {
       name: 'JavaScript',
@@ -54,7 +54,7 @@ function Skillset() {
     },
   ];
   return (
-    <section className="skillset">
+    <section className="skillset" ref={ref}>
       <div className="skillset-title">Skillset</div>
       <div className="icon-container">
         {skillsArray.map((skill) => (
@@ -63,6 +63,6 @@ function Skillset() {
       </div>
     </section>
   );
-}
+});
 
 export default Skillset;

@@ -1,19 +1,46 @@
-import React from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import ProfilePicture from '../img/profile.jpg';
 
-function About() {
+const About = forwardRef((props, ref) => {
+  const [index, setIndex] = useState(0);
+  const attributeArray = [
+    'snowboarder 🏂',
+    'spontaneous baker 🧁',
+    'sports enthusiast 🎾',
+    'animal lover 🐶',
+    'hiker ⛰️',
+    'occasional cook 🍜',
+    'boardgame expert 🃏',
+    'perfume connoisseur  🎀',
+    'Formula 1 enjoyer 🏁',
+    'wine drinker 🍷',
+    'professional netflixer 📺',
+  ];
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIndex((prevIndex) => {
+        if (prevIndex === 10) {
+          return 0;
+        } else {
+          return prevIndex + 1;
+        }
+      });
+    }, 4000);
+    return () => clearTimeout(timer);
+  });
   return (
-    <section className="about">
+    <section className="about" ref={ref}>
       <img className="about-img" src={ProfilePicture} alt="profile" />
       <div className="about-info">
         <div className="about-title">About Me</div>
         <div className="about-description">
-          Hi! My name is Ana, I am an ex-neurologist and an aspiring front-end
-          developer.
+          Hi! My name is Ana, I am an ex-neurology resident, an aspiring
+          software developer and{' '}
+          <div className="attribute">{attributeArray[index]}.</div>
         </div>
       </div>
     </section>
   );
-}
+});
 
 export default About;
