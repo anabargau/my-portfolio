@@ -12,10 +12,6 @@
     --color-light-purple: #8265a7;
 }
 
-#root {
-    max-width: 2000px;
-}
-
 * {
     margin: 0;
     padding: 0;
