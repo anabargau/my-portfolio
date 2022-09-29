@@ -12,6 +12,10 @@
     --color-light-purple: #8265a7;
 }
 
+#root {
+    max-width: 2000px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -313,10 +317,13 @@ a {
 
     .project {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
     }
 
     .project-title {
-        width: 100%;
+        min-width: 100%;
         text-align: center;
         border-radius: 0;
     }
@@ -326,7 +333,6 @@ a {
     }
 
     .project-img-container img {
-        max-width: 400px;
         border-radius: 0;
     }
 
