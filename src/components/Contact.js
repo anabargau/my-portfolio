@@ -4,6 +4,7 @@ const Contact = forwardRef((props, ref) => {
   return (
     <section ref={ref} className="contact">
       <div className="contact-title">Let's get in touch!</div>
+      <div className="mail">anabargau@gmail.com</div>
       <div className="contact-icon-container">
         <a href="mailto:anabargau@gmail.com">
           <img
