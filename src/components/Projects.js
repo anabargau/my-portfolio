@@ -9,7 +9,7 @@ const Projects = forwardRef((props, ref) => {
       codeUrl: 'https://github.com/anabargau/phototagging-app',
       name: "Where's Waldo Phototagging App",
       description:
-        'An exciting game where you have to find Waldo and his friends in a series of different photos.',
+        'An app insipred by the popular game "Where\'s Waldo?", where you have to find Waldo and his friends in a photo cluttered with many other characters.',
       img: 'https://i.postimg.cc/zfmC4mz8/waldo.png',
       js: true,
     },

@@ -11,6 +11,7 @@ const About = forwardRef((props, ref) => {
     'hiker ⛰️',
     'occasional cook 🍜',
     'boardgame expert 🃏',
+    'yoga practitioner 🧘‍♀️',
     'perfume connoisseur  🎀',
     'Formula 1 enjoyer 🏁',
     'wine drinker 🍷',
