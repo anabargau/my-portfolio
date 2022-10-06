@@ -11,7 +11,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'An app insipred by the popular game "Where\'s Waldo?", where you have to find Waldo and his friends in a photo cluttered with many other characters.',
       img: 'https://i.postimg.cc/zfmC4mz8/waldo.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/shopping-cart/',
@@ -20,7 +19,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A site for an online pet shop, where you can purchase everything your pet needs: from food and toys to cleaning products.',
       img: 'https://i.postimg.cc/LmXksTGm/shopping-cart.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/memory-card/',
@@ -29,7 +27,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A space-themed memory game. The goal is to click on each individual card, without clicking on any of it twice.',
       img: 'https://i.postimg.cc/sVMJTcJT/memory-game.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/cv-project/',
@@ -38,7 +35,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A CV-builder app that lets you create your own CV by following a template.',
       img: 'https://i.postimg.cc/zv7T43dg/cv.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/battleship/',
@@ -47,7 +43,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A classic game of battleship with a design that transports you right to the school years.',
       img: 'https://i.postimg.cc/QCJqsfMV/battleship.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/weather-app/',
@@ -56,7 +51,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A weather app that lets you find what the weather is like anywhere in the world.',
       img: 'https://i.postimg.cc/DwJbPCKs/weather.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/todo-list/',
@@ -65,7 +59,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A useful app that you can use everyday to organise you personal project and every task you need to do to accomplish each one. Log each task in your app and get working.',
       img: 'https://i.postimg.cc/wMws0Zv5/todo.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/my-library/',
@@ -74,7 +67,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A library app that helps you keep track of the books you read or maybe want to read.',
       img: 'https://i.postimg.cc/gjmvM3Kp/library.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/admin-dashboard/',
@@ -82,7 +74,6 @@ const Projects = forwardRef((props, ref) => {
       name: 'Admin Dashboard',
       description: 'A dashboard created by following a given design template.',
       img: 'https://i.postimg.cc/BZB5jwqn/dashboard.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/restaurant-page/',
@@ -91,7 +82,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A simple site for your restaurant that provides a homepage, a page for your delicious menu and a contact page.',
       img: 'https://i.postimg.cc/jjywGL2S/restaurant.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/tic-tac-toe-JS/',
@@ -100,7 +90,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'The classic Tic-Tac-Toe game that you can play alone or with your friends when you are bored.',
       img: 'https://i.postimg.cc/RZNwbSw-W/tictactoe.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/calculator/',
@@ -109,7 +98,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A simple calculator that does basic math operations and which will be a great help in times of need.',
       img: 'https://i.postimg.cc/B4fwtdC4/calculator.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/etch-a-sketch/',
@@ -118,7 +106,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A sketchpad on which you can draw masterpieces with any color that your heart desires. The possibilities are endless!',
       img: 'https://i.postimg.cc/bN6QTDSX/sketch.png',
-      js: true,
     },
     {
       liveUrl: 'https://anabargau.github.io/rock-paper-scissors/',
@@ -127,7 +114,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'The well known game of rock-paper-scissors, this time played in a chat with Doris.',
       img: 'https://i.postimg.cc/g2Q8CCKN/rock-paper-scissors.png',
-      js: true,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Chess#main.rb',
@@ -135,7 +121,6 @@ const Projects = forwardRef((props, ref) => {
       name: 'Chess',
       description: 'The console version of the popular game chess.',
       img: 'https://i.postimg.cc/85hRBZMw/chess.png',
-      js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Tic-Tac-Toe#main.rb',
@@ -143,7 +128,6 @@ const Projects = forwardRef((props, ref) => {
       name: 'Tic-Tac-Toe(Ruby)',
       description: 'The classic tic-tac-toe game, now written in Ruby.',
       img: 'https://i.postimg.cc/yY6mcXdX/tic-tac-toe-ruby.png',
-      js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Mastermind#main.rb',
@@ -152,7 +136,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         "A console version of the game Mastermind, a game where you have to guess your opponent's secret code within a certain number of turns (like hangman with colored pegs).",
       img: 'https://i.postimg.cc/NjMxq7vf/mastermind.png',
-      js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Hangman#main.rb',
@@ -161,7 +144,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A console version of the popular game Hangman. It chooses a random word that you have to guess.',
       img: 'https://i.postimg.cc/W4q6tN4B/hangman.png',
-      js: false,
     },
     {
       liveUrl: 'https://replit.com/@anabananaa/Connect-Four#main.rb',
@@ -170,7 +152,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A console version of the game Connect-Four. It is a two-player connection board game, in which the players choose a color and then take turns dropping colored tokens into a grid. ',
       img: 'https://i.postimg.cc/52RSxYf5/connect-four.png',
-      js: false,
     },
   ];
   return (
