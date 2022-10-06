@@ -16,7 +16,7 @@ const Projects = forwardRef((props, ref) => {
     {
       liveUrl: 'https://anabargau.github.io/shopping-cart/',
       codeUrl: 'https://github.com/anabargau/shopping-cart',
-      name: 'Shopping Cart',
+      name: 'Happy Paws',
       description:
         'A site for an online pet shop, where you can purchase everything your pet needs: from food and toys to cleaning products.',
       img: 'https://i.postimg.cc/LmXksTGm/shopping-cart.png',
@@ -27,7 +27,7 @@ const Projects = forwardRef((props, ref) => {
       codeUrl: 'https://github.com/anabargau/memory-card',
       name: 'Memory Card Game',
       description:
-        'A game where you can train your memory by travelling through space.',
+        'A space-themed memory game. The goal is to click on each individual card, without clicking on any of it twice.',
       img: 'https://i.postimg.cc/sVMJTcJT/memory-game.png',
       js: true,
     },
@@ -125,7 +125,7 @@ const Projects = forwardRef((props, ref) => {
       codeUrl: 'https://github.com/anabargau/rock-paper-scissors',
       name: 'Rock-Paper-Scissors',
       description:
-        'The well known game of rock-paper-scissors, this time played in a chat with Doris. Think you can beat her?',
+        'The well known game of rock-paper-scissors, this time played in a chat with Doris.',
       img: 'https://i.postimg.cc/g2Q8CCKN/rock-paper-scissors.png',
       js: true,
     },
@@ -133,8 +133,7 @@ const Projects = forwardRef((props, ref) => {
       liveUrl: 'https://replit.com/@anabananaa/Chess#main.rb',
       codeUrl: 'https://github.com/anabargau/chess',
       name: 'Chess',
-      description:
-        'You can now play the complex game of chess in the comfort of your own console. Think you are good enough?',
+      description: 'The console version of the popular game chess.',
       img: 'https://i.postimg.cc/85hRBZMw/chess.png',
       js: false,
     },
@@ -142,8 +141,7 @@ const Projects = forwardRef((props, ref) => {
       liveUrl: 'https://replit.com/@anabananaa/Tic-Tac-Toe#main.rb',
       codeUrl: 'https://github.com/anabargau/tic-tac-toe-ruby',
       name: 'Tic-Tac-Toe(Ruby)',
-      description:
-        'The classic tic-tac-toe game, now written in Ruby for a change.',
+      description: 'The classic tic-tac-toe game, now written in Ruby.',
       img: 'https://i.postimg.cc/yY6mcXdX/tic-tac-toe-ruby.png',
       js: false,
     },
@@ -152,7 +150,7 @@ const Projects = forwardRef((props, ref) => {
       codeUrl: 'https://github.com/anabargau/mastermind',
       name: 'Mastermind',
       description:
-        'Mastermind, the challenging game of logic and deduction. Do you think you can crack the code? You can be the codebreaker or the codemaker.',
+        "A console version of the game Mastermind, a game where you have to guess your opponent's secret code within a certain number of turns (like hangman with colored pegs).",
       img: 'https://i.postimg.cc/NjMxq7vf/mastermind.png',
       js: false,
     },
@@ -160,7 +158,8 @@ const Projects = forwardRef((props, ref) => {
       liveUrl: 'https://replit.com/@anabananaa/Hangman#main.rb',
       codeUrl: 'https://github.com/anabargau/hangman',
       name: 'Hangman',
-      description: 'Test your vocabulary with this fun game of Hangman.',
+      description:
+        'A console version of the popular game Hangman. It chooses a random word that you have to guess.',
       img: 'https://i.postimg.cc/W4q6tN4B/hangman.png',
       js: false,
     },
@@ -169,7 +168,7 @@ const Projects = forwardRef((props, ref) => {
       codeUrl: 'https://github.com/anabargau/connect-four',
       name: 'Connect-Four',
       description:
-        'The original vertical four-in-a-row checkers game. Come play with your friends!',
+        'A console version of the game Connect-Four. It is a two-player connection board game, in which the players choose a color and then take turns dropping colored tokens into a grid. ',
       img: 'https://i.postimg.cc/52RSxYf5/connect-four.png',
       js: false,
     },
