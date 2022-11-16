@@ -17,6 +17,14 @@ const Skillset = forwardRef((props, ref) => {
       img: 'https://i.postimg.cc/qR0hrNPZ/router.png',
     },
     {
+      name: 'NodeJS',
+      img: 'https://i.postimg.cc/MKd6zFrX/nodejs.png',
+    },
+    {
+      name: 'MongoDB',
+      img: 'https://i.postimg.cc/MKbcV538/mongo.png',
+    },
+    {
       name: 'HTML',
       img: 'https://gistcdn.githack.com/anabargau/9e43c99175213a731a57c1fad8e571cd/raw/8e9c8014a9211a7c4032e67476138ac5e38e8e39/html.svg',
     },
@@ -40,14 +48,14 @@ const Skillset = forwardRef((props, ref) => {
       name: 'Jest',
       img: 'https://i.postimg.cc/hGVzNL5d/jest.webp',
     },
-    {
-      name: 'NPM',
-      img: 'https://gist.githubusercontent.com/anabargau/24ff4a90187392fa91491edca3750d79/raw/47bdf8733874cec083ae113bda150f4a1b620ff7/npm.svg',
-    },
-    {
-      name: 'Webpack',
-      img: 'https://gistcdn.githack.com/anabargau/c8c7c2e5b2ab5578e465f06ef45c4503/raw/7ef80ac3b56e6af1afd0ed9a08a1a34041bbbec6/webpack.svg',
-    },
+    //{
+    //  name: 'NPM',
+    //  img: 'https://gist.githubusercontent.com/anabargau/24ff4a90187392fa91491edca3750d79/raw/47bdf8733874cec083ae113bda150f4a1b620ff7/npm.svg',
+    //},
+    //{
+    //  name: 'Webpack',
+    //  img: 'https://gistcdn.githack.com/anabargau/c8c7c2e5b2ab5578e465f06ef45c4503/raw/7ef80ac3b56e6af1afd0ed9a08a1a34041bbbec6/webpack.svg',
+    //},
     {
       name: 'Ruby',
       img: 'https://gist.githubusercontent.com/anabargau/e7c98d14901d938844966241b6379cfc/raw/6ee7cb5680336d0a99828e27e9212a2c469464b3/ruby.svg',
