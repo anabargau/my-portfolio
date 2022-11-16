@@ -5,6 +5,14 @@ import Project from './Project';
 const Projects = forwardRef((props, ref) => {
   const projectsArray = [
     {
+      liveUrl: 'https://young-mountain-45862.herokuapp.com/',
+      codeUrl: 'https://github.com/anabargau/movieplex',
+      name: 'Movieplex',
+      description:
+        'A simple movie libray, where you can save your favorite movies. You can create, update and delete movies and movie genres.',
+      img: 'https://i.postimg.cc/SRk88PhH/Screenshot-from-2022-11-16-19-43-15.png',
+    },
+    {
       liveUrl: 'https://anabargau.github.io/phototagging-app/',
       codeUrl: 'https://github.com/anabargau/phototagging-app',
       name: "Where's Waldo Phototagging App",
