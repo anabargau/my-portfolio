@@ -5,6 +5,14 @@ import Project from './Project';
 const Projects = forwardRef((props, ref) => {
   const projectsArray = [
     {
+      liveUrl: 'https://serene-shelf-98749.herokuapp.com/message/message_list',
+      codeUrl: 'https://github.com/anabargau/secret-club',
+      name: 'Secret-Club',
+      description:
+        "An exclusive club, where you can sign up to see other people's messages, but you can't see their author until you enter the secret password to become an insider. You can also enter another password to become an admin and gain some extra benefits.",
+      img: 'https://i.ibb.co/rwLQTm8/Screenshot-from-2022-11-25-23-38-42.png',
+    },
+    {
       liveUrl: 'https://young-mountain-45862.herokuapp.com/',
       codeUrl: 'https://github.com/anabargau/movieplex',
       name: 'Movieplex',
