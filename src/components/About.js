@@ -13,7 +13,6 @@ const About = forwardRef((props, ref) => {
     'boardgame expert 🃏',
     'yoga practitioner 🧘‍♀️',
     'perfume connoisseur  🎀',
-    'Formula 1 enjoyer 🏁',
     'wine drinker 🍷',
     'professional netflixer 📺',
   ];
