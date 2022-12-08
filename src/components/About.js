@@ -1,5 +1,5 @@
 import React, { forwardRef, useEffect, useState } from 'react';
-import ProfilePicture from '../img/profile.jpg';
+import ProfilePicture from '../img/profile-photo.jpg';
 
 const About = forwardRef((props, ref) => {
   const [index, setIndex] = useState(0);
