@@ -34,8 +34,7 @@ const About = forwardRef((props, ref) => {
       <div className="about-info">
         <div className="about-title">About Me</div>
         <div className="about-description">
-          Hi! My name is Ana, I am an ex-neurology resident, an aspiring
-          software developer and{' '}
+          Hi! My name is Ana, I am an ex-neurology resident, full stack web developer with a comprehensive experience of 2 years and{' '}
           <div className="attribute">{attributeArray[index]}.</div>
         </div>
       </div>
