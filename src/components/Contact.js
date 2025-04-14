@@ -1,9 +1,10 @@
 import React, { forwardRef } from 'react';
+import '../styles/contact.css';
 
 const Contact = forwardRef((props, ref) => {
   return (
     <section ref={ref} className="contact">
-      <div className="contact-title">Let's get in touch!</div>
+      <div className="contact-title neon-pink">Let's get in touch!</div>
       <div className="mail">anabargau@gmail.com</div>
       <div className="contact-icon-container">
         <a href="mailto:anabargau@gmail.com">

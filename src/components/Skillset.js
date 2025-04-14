@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import uniqid from 'uniqid';
+import '../styles/skillset.css';
 import Skill from './Skill';
 
 const Skillset = forwardRef((props, ref) => {
@@ -63,7 +64,7 @@ const Skillset = forwardRef((props, ref) => {
   ];
   return (
     <section className="skillset" ref={ref}>
-      <div className="skillset-title">Skillset</div>
+      <div className="skillset-title neon-blue">Skillset</div>
       <div className="icon-container">
         {skillsArray.map((skill) => (
           <Skill key={uniqid()} skill={skill} />

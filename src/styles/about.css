@@ -1,0 +1,72 @@
+@import './variables.css';
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 100px;
+    position: relative;
+}
+
+.about-img {
+    max-width: 400px;
+    z-index: 1;
+    box-shadow: #f15bb5 0px 5px 20px 0px, #f15bb5 0px 0px 0px 1px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+}r
+
+.attribute {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.about-title {
+    border: 1px solid pink;
+    box-shadow: 
+        0 0 5px #f15bb5,
+        0 0 10px #f15bb5,
+        0 0 20px #ff69b4,
+        0 0 30px #ff69b4;
+    width: max-content;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 0 10px 0 0;
+    font-weight: 600;
+}
+
+.about-description {
+    padding: 40px 40px 40px 20px;
+    color: white;
+    font-size: 25px;
+    max-width: 500px;
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 500px) {
+    .about {
+        flex-direction: column;
+        min-width: 100%;
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .about-info {
+        min-width: 100%;
+    }
+
+    .about-description {
+        border-radius: 0;
+    }
+
+    .about-title {
+        border-radius: 0;
+        align-self: center;
+        margin-top: 20px;
+        border-radius: 8px 8px 0 0;
+    }
+}

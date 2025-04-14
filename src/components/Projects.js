@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import uniqid from 'uniqid';
+import '../styles/projects.css';
 import Project from './Project';
 
 const Projects = forwardRef((props, ref) => {
@@ -170,7 +171,7 @@ const Projects = forwardRef((props, ref) => {
   ];
   return (
     <section className="work" ref={ref}>
-      <div className="work-title">My Work</div>
+      <div className="work-title neon-green">My Work</div>
       <div className="projects-container">
         {projectsArray.map((project) => (
           <Project key={uniqid()} project={project} />

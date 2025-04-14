@@ -1,0 +1,97 @@
+@import './variables.css';
+
+@font-face {
+    font-family: mada;
+    src: url('../fonts/Mada-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: mada, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+    box-sizing: border-box;
+    color: white;
+}
+
+section {
+    background-color: var(--color-dark-purple);
+}
+
+strong {
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.neon-purple {
+    text-shadow: 
+        0 0 5px #9b5de5,
+        0 0 10px #9b5de5,
+        0 0 20px #9b5de5,
+        0 0 40px #9b5de5;
+  }
+  
+.neon-pink {
+    text-shadow:
+        0 0 5px #f15bb5,
+        0 0 10px #f15bb5,
+        0 0 20px #ff69b4,
+        0 0 40px #ff69b4;
+
+    .underline {
+        background: #f15bb5;
+    }
+}
+
+.neon-blue {
+    text-shadow:
+      0 0 5px #00bbf9,
+      0 0 10px #00f0ff,
+      0 0 20px #00f0ff,
+      0 0 40px #00f0ff;
+
+    .underline {
+        background: #00bbf9;
+    }
+  }
+
+.neon-purple {
+    text-shadow:
+        0 0 5px #9b5de5,
+        0 0 10px #a362ea,
+        0 0 20px #b388ff,
+        0 0 40px #caaaff;
+
+    .underline {
+        background: #9b5de5;
+    }
+}
+
+.neon-green {
+    text-shadow:
+        0 0 5px #00f5d4,
+        0 0 10px #00ffcc,
+        0 0 20px #00ffcc,
+        0 0 40px #00ffcc;
+
+    .underline {
+        background: #00f5d4;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        scroll-padding-top: 250px;
+    }
+}
+
+@media (max-width: 1000px) {
+   * {
+    width: 100%;
+   }
+}

@@ -5,7 +5,7 @@ function Project(props) {
   return (
     <div className="project">
       <div className="project-info">
-        <div className="project-title">{project.name}</div>
+        <div className="project-title neon-purple">{project.name}</div>
         <div className="project-description">{project.description}</div>
 
         <div className="link-btns">

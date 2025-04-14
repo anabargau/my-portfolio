@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
-import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Skillset from './components/Skillset';
 import Story from './components/Story';
+import './styles/global.css';
 
 function App() {
   const aboutRef = useRef(null);

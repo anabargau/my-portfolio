@@ -1,9 +1,10 @@
 import React, { forwardRef } from 'react';
+import '../styles/story.css';
 
 const Story = forwardRef((props, ref) => {
   return (
     <section className="story" ref={ref}>
-      <div className="story-title">My Story</div>
+      <div className="story-title neon-purple">My Story</div>
       <div className="story-content">
         My journey has been anything but straightforward. In high school, I developed a love for <strong>math</strong> and <strong>coding</strong>, even competing in programming competitions. However, I had a change of heart and pursued <strong>medicine</strong> in Bucharest, driven by a desire to <strong>help</strong> people directly. <br />
         After <strong>six challenging year</strong>s and a year as a neurology resident, I realized medicine wasn’t for me. I reconnected with my passion for <strong>coding</strong>, diving into web development through <strong>
