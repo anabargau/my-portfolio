@@ -1,10 +1,25 @@
-import React, { forwardRef } from 'react';
-import uniqid from 'uniqid';
+import { AnimatePresence, motion } from "motion/react";
+import React, { forwardRef, useState } from 'react';
 import '../styles/projects.css';
 import Project from './Project';
 
 const Projects = forwardRef((props, ref) => {
   const projectsArray = [
+    {
+      codeUrl: 'https://github.com/anabargau/web-scraper',
+      name: 'Web-Scraper',
+      description:
+        "A distributed web scraping and company data retrieval system with the purpose of extracting meaningful business insights at scale. The goal was to create a robust and performant pipeline that could scrape hundreds of websites, extract relevant company data (such as names, domains, phone numbers, and social media links), and store them in a searchable format via ElasticSearch.",
+      img: 'https://i.postimg.cc/DZQb58wM/Screenshot-2025-04-19-at-22-50-51.png',
+    },
+    {
+      liveUrl: 'https://anabargau.github.io/phototagging-app/',
+      codeUrl: 'https://github.com/anabargau/phototagging-app',
+      name: "Where's Waldo Phototagging App",
+      description:
+        'An app insipred by the popular game "Where\'s Waldo?", where you have to find Waldo and his friends in a photo cluttered with many other characters.',
+      img: 'https://i.postimg.cc/zfmC4mz8/waldo.png',
+    },
     {
       codeUrl: 'https://github.com/anabargau/secret-club',
       name: 'Secret-Club',
@@ -18,14 +33,6 @@ const Projects = forwardRef((props, ref) => {
       description:
         'A simple movie libray, where you can save your favorite movies. You can create, update and delete movies and movie genres.',
       img: 'https://i.postimg.cc/SRk88PhH/Screenshot-from-2022-11-16-19-43-15.png',
-    },
-    {
-      liveUrl: 'https://anabargau.github.io/phototagging-app/',
-      codeUrl: 'https://github.com/anabargau/phototagging-app',
-      name: "Where's Waldo Phototagging App",
-      description:
-        'An app insipred by the popular game "Where\'s Waldo?", where you have to find Waldo and his friends in a photo cluttered with many other characters.',
-      img: 'https://i.postimg.cc/zfmC4mz8/waldo.png',
     },
     {
       liveUrl: 'https://anabargau.github.io/shopping-cart/',
@@ -101,7 +108,7 @@ const Projects = forwardRef((props, ref) => {
     {
       liveUrl: 'https://anabargau.github.io/tic-tac-toe-JS/',
       codeUrl: 'https://github.com/anabargau/tic-tac-toe-JS',
-      name: 'Tic-Tac-Toe(JS)',
+      name: 'Tic-Tac-Toe',
       description:
         'The classic Tic-Tac-Toe game that you can play alone or with your friends when you are bored.',
       img: 'https://i.postimg.cc/RZNwbSw-W/tictactoe.png',
@@ -169,13 +176,45 @@ const Projects = forwardRef((props, ref) => {
       img: 'https://i.postimg.cc/52RSxYf5/connect-four.png',
     },
   ];
+
+  const [activeProject, setActiveProject] = useState(projectsArray[0]);
+
   return (
     <section className="work" ref={ref}>
       <div className="work-title neon-green">My Work</div>
       <div className="projects-container">
-        {projectsArray.map((project) => (
-          <Project key={uniqid()} project={project} />
-        ))}
+        <div className="projects-titles">
+          {projectsArray.map((project) => (
+            <div 
+              className='project-title neon-purple'
+              key={project.name}
+              onClick={() => setActiveProject(project)}
+            >
+              <motion.div
+                layout
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                className="dot-line"
+                style={{
+                  width: activeProject.name === project.name ? "2rem" : "5px",
+                  height: "5px",
+                  borderRadius: activeProject.name === project.name ? "2px" : "50%",
+                  backgroundColor: "var(--color-fuchsia)",
+                  boxShadow: "0 0 6px var(--color-fuchsia)",
+                }}
+              />
+              <span className="title-text">{project.name}</span>
+            </div>
+          ))}
+        </div>
+        <div className="projects-info">
+            <div className="project-info">
+              <AnimatePresence initial={false} mode="wait">
+                {projectsArray.map((project) => (
+                    activeProject.name === project.name && <Project key={project.name} project={project} />
+                ))}
+              </AnimatePresence>
+            </div>
+        </div>
       </div>
     </section>
   );

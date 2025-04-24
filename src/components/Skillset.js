@@ -1,9 +1,17 @@
+import { motion, useScroll, useTransform } from "framer-motion";
 import React, { forwardRef } from 'react';
 import uniqid from 'uniqid';
 import '../styles/skillset.css';
 import Skill from './Skill';
 
 const Skillset = forwardRef((props, ref) => {
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "start center"],
+  });
+
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
+
   const skillsArray = [
     {
       name: 'JavaScript',
@@ -64,12 +72,12 @@ const Skillset = forwardRef((props, ref) => {
   ];
   return (
     <section className="skillset" ref={ref}>
-      <div className="skillset-title neon-blue">Skillset</div>
-      <div className="icon-container">
+      <motion.div className="skillset-title neon-blue" style={{ opacity }}>Skillset</motion.div>
+      <motion.div className="icon-container" style={{ opacity }}>
         {skillsArray.map((skill) => (
           <Skill key={uniqid()} skill={skill} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 });

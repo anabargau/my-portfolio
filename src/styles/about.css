@@ -11,8 +11,10 @@
 
 .about-img {
     max-width: 400px;
+    box-shadow: 
+        0 0 5px #f15bb5,
+        0 0 10px #f15bb5;
     z-index: 1;
-    box-shadow: #f15bb5 0px 5px 20px 0px, #f15bb5 0px 0px 0px 1px;
 }
 
 .about-info {
@@ -29,9 +31,7 @@
     border: 1px solid pink;
     box-shadow: 
         0 0 5px #f15bb5,
-        0 0 10px #f15bb5,
-        0 0 20px #ff69b4,
-        0 0 30px #ff69b4;
+        0 0 10px #f15bb5;
     width: max-content;
     padding: 20px;
     font-size: 25px;

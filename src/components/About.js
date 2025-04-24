@@ -15,12 +15,19 @@ const About = forwardRef((props, ref) => {
     'yoga practitioner 🧘‍♀️',
     'perfume connoisseur  🎀',
     'wine drinker 🍷',
+    'coffee addict ☕',
+    'bookworm 📚',
+    'music lover 🎶',
+    'movie buff 🎬',
+    'foodie 🍕',
+    'travel addict ✈️',
+    'gym goer 💪🏻',
     'professional netflixer 📺',
   ];
   useEffect(() => {
     const timer = setTimeout(() => {
       setIndex((prevIndex) => {
-        if (prevIndex === 10) {
+        if (prevIndex === 17) {
           return 0;
         } else {
           return prevIndex + 1;

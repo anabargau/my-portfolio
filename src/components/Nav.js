@@ -20,41 +20,31 @@ function Nav(props) {
   }
 
   useEffect(() => {
-    const observerOptions = {
+    const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.6,
+      threshold: 0.8,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const matchingTab = tabs.find((tab) => tab.ref.current === entry.target);
-          if (matchingTab && matchingTab.name !== activeTab.name) {
-            setActiveTab(matchingTab);
-          }
+          setActiveTab(matchingTab);
         }
       });
-    }, observerOptions);
+    }, options);
 
     tabs.forEach((tab) => {
-      if (tab.ref.current) observer.observe(tab.ref.current);
+      observer.observe(tab.ref.current);
     });
 
     return () => {
       tabs.forEach((tab) => {
-        if (tab.ref.current) observer.unobserve(tab.ref.current);
+        observer.unobserve(tab.ref.current);
       });
     };
-  }, [tabs, activeTab]);
-
-  useEffect(() => {
-    tabs.forEach((tab) => {
-      if (tab.ref.current && tab.ref.current.getBoundingClientRect().top < window.innerHeight * 0.6) {
-        setActiveTab(tab);
-      }
-    });
-  }, [tabs]);
+  }, []);
 
   return (
     <nav className="nav">

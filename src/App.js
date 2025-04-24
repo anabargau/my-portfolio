@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
-import Nav from './components/Nav';
+import MobileNav from './components/MobileNav';
 import Projects from './components/Projects';
 import Skillset from './components/Skillset';
 import Story from './components/Story';
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="app">
-      <Nav
+      <MobileNav
         aboutRef={aboutRef}
         skillsetRef={skillsetRef}
         storyRef={storyRef}
