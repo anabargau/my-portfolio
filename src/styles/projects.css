@@ -1,12 +1,23 @@
 @import './variables.css';
 
 .work {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
     gap: 50px;
+}
+
+.work.desktop {
+    display: flex;
+}
+
+.work.mobile {
+    display: none;
+}
+
+.project-title {
+    display: block;
 }
 
 .work-title {
@@ -60,6 +71,10 @@
     font-size: 20px;
     color: white;
     line-height: 25px;
+
+    .project-title {
+        display: none;
+    }
 }
 
 .link-btns {
@@ -192,5 +207,26 @@
 
     .project-title {
         border-radius: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .work.desktop {
+        display: none;
+    }
+    
+    .work.mobile {
+        display: flex;
+    }
+
+    .work-title {
+        margin-bottom: 0;
+    }
+
+    .project-info {
+        .project-title {
+            display: block;
+            transform: translateY(0);
+        }
     }
 }

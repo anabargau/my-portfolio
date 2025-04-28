@@ -81,7 +81,7 @@ a {
 
 @media (max-width: 500px) {
     * {
-        scroll-padding-top: 250px;
+        scroll-padding-top: 60px;
     }
 }
 

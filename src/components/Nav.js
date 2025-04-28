@@ -47,13 +47,13 @@ function Nav(props) {
   }, []);
 
   return (
-    <nav className="nav">
+    <nav className="nav desktop-nav"> 
       <ul>
         {tabs.map((tab) => (
           <motion.li
             className={`${tab.color}`}
             style={{ position: "relative" }}
-            key={tab.name}
+            key={`${tab.name}-desktop`}
             onClick={() => {
               setActiveTab(tab);
               handleScrollTo(tab.ref);

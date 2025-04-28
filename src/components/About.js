@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useState } from 'react';
 import ProfilePicture from '../img/profile-photo.jpg';
 import '../styles/about.css';
+import Typewriter from './Typewriter';
 
 const About = forwardRef((props, ref) => {
   const [index, setIndex] = useState(0);
@@ -42,8 +43,8 @@ const About = forwardRef((props, ref) => {
       <div className="about-info">
         <div className="about-title neon-pink">About Me</div>
         <div className="about-description">
-          Hi! My name is Ana, I am an ex-neurology resident, full stack web developer with a comprehensive experience of 2 years and{' '}
-          <div className="attribute neon-green">{attributeArray[index]}.</div>
+          Hi! My name is Ana! I am passionate about creating scalable, responsive web apps with clean code, blending technical expertise with attention to detail and also a {' '} <br className="mobile" />
+          <Typewriter className="attribute neon-green" attributeArray={attributeArray} />
         </div>
       </div>
     </section>

@@ -13,6 +13,7 @@ function Project(props) {
   }, [])
 
   return (
+
     <motion.div
       className="project-info"
       initial={{ opacity: 0, x: 50 }}
@@ -20,6 +21,7 @@ function Project(props) {
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.4 }}
     >
+      <div className="project-title neon-purple">{project.name}</div>
       <div className="project-img-container">
         {imgLoaded && (
           <motion.img

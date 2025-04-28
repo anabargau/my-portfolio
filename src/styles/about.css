@@ -17,10 +17,18 @@
     z-index: 1;
 }
 
+br.mobile {
+    display: none;
+}
+
 .about-info {
     display: flex;
     flex-direction: column;
-}r
+}
+
+.typewriter-text {
+    line-height: 2rem;
+}
 
 .attribute {
     font-size: 28px;
@@ -68,5 +76,9 @@
         align-self: center;
         margin-top: 20px;
         border-radius: 8px 8px 0 0;
+    }
+
+    br.mobile {
+        display: block;
     }
 }

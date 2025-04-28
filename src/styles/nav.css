@@ -2,7 +2,6 @@
 
 .nav {
     min-width: 100%;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 50px;
@@ -12,6 +11,18 @@
     top: 0;
     z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.desktop-nav {
+    display: flex;
+}
+
+.menu-item {
+    cursor: pointer;
 }
 
 .nav ul {
@@ -42,7 +53,15 @@
     background: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
     .nav {
         gap: 20px;
         padding: 30px;
@@ -51,9 +70,55 @@
 
     .menu-button {
         position: fixed;
-        top: 12px;
+        top: 19px;
         left: 12px;
         width: fit-content;
+
+        span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            opacity: 1;
+            
+            background: #cdcdcd;
+            border-radius: 3px;
+            
+            z-index: 1;
+            
+            transform-origin: left center;
+            
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        opacity 0.55s ease;
+        }
+
+        span:first-child {
+            transform-origin: 0% 0%;
+        }
+
+        span:nth-child(2) {
+            transform-origin: 0% 100%;
+        }
+
+        span:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .menu-button.open {
+        span:nth-child(1) {
+            transform: rotate(45deg) translate(0, -2px);
+        }
+
+        span:nth-child(2) {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        span:nth-child(3) {
+            transform: rotate(-45deg) translate(-1px, 1px);
+        }
     }
 
     .menu-list {
