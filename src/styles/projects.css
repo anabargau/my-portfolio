@@ -4,12 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
     gap: 20px;
 }
 
 .work.desktop {
     display: flex;
+    padding-top: 80px;
 }
 
 .work.mobile {
@@ -144,6 +144,7 @@
 
 .project-description {
     text-align: center;
+    width: 800px;
 }
 
 @media (max-width: 992px) {
@@ -186,7 +187,7 @@
     }
 
     .project-description {
-        padding: 0 20px;
+        width: auto;
     }
 
     .link-btns {
@@ -220,6 +221,10 @@
     
     .work.mobile {
         display: flex;
+    }
+
+    .work {
+        padding: 50px;
     }
 
     .work-title {

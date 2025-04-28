@@ -21,16 +21,18 @@ function Project(props) {
       transition={{ duration: 0.4 }}
     >
       <div className="project-title neon-purple">{project.name}</div>
-      <div className="project-img-container">
-        {imgLoaded && (
-          <motion.img
-            src={project.img}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-          />
-        )}
+      <div>
+        <div className="project-img-container">
+          {imgLoaded && (
+            <motion.img
+              src={project.img}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+            />
+          )}
+        </div>
       </div>
 
       <div className="project-description">{project.description}</div>

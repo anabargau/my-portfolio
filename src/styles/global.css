@@ -10,7 +10,6 @@
     padding: 0;
     font-family: mada, sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
     box-sizing: border-box;
     color: white;
 }
