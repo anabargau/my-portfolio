@@ -99,13 +99,13 @@ a {
     }
     
     .main {
-        height: 100vh;
+        height: calc(100vh - 80px);
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
     }
     
     section {
-        height: 100vh;
+        height: calc(100vh - 80px);
         scroll-snap-align: center;
     }
 }

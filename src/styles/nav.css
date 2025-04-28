@@ -19,6 +19,7 @@
 
 .desktop-nav {
     display: flex;
+    height: 80px;
 }
 
 .menu-item {
