@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useState } from 'react';
 import ProfilePicture from '../img/profile-photo.jpg';
 import '../styles/about.css';
+import FadeIn from './FadeIn';
 import Typewriter from './Typewriter';
 
 const About = forwardRef((props, ref) => {
@@ -39,14 +40,18 @@ const About = forwardRef((props, ref) => {
   });
   return (
     <section className="about" ref={ref}>
-      <img className="about-img" src={ProfilePicture} alt="profile" />
-      <div className="about-info">
-        <div className="about-title neon-pink">About Me</div>
-        <div className="about-description">
-          Hi! My name is Ana! I am passionate about creating scalable, responsive web apps with clean code, blending technical expertise with attention to detail and also a {' '} <br className="mobile" />
-          <Typewriter className="attribute neon-green" attributeArray={attributeArray} />
+      <FadeIn>
+        <img className="about-img" src={ProfilePicture} alt="profile" />
+      </FadeIn>
+      <FadeIn>
+        <div className="about-info">
+          <div className="about-title neon-pink">About Me</div>
+          <div className="about-description">
+            Hi! My name is Ana! I am passionate about creating scalable, responsive web apps with clean code, blending technical expertise with attention to detail and also a {' '} <br className="mobile" />
+            <Typewriter className="attribute neon-green" attributeArray={attributeArray} />
+          </div>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 });

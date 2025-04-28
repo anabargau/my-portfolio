@@ -90,3 +90,23 @@ a {
     width: 100%;
    }
 }
+
+@media (min-width: 1000px) {
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* prevent scrolling on body */
+    }
+    
+    .main {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    section {
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+}

@@ -13,7 +13,6 @@ function Project(props) {
   }, [])
 
   return (
-
     <motion.div
       className="project-info"
       initial={{ opacity: 0, x: 50 }}

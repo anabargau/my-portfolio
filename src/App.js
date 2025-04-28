@@ -206,12 +206,14 @@ function App() {
         projectsRef={projectsRef}
         contactRef={contactRef}
       />
-      <About ref={aboutRef} />
-      <Story ref={storyRef} />
-      <Skillset ref={skillsetRef} />
-      <Projects ref={projectsRef} projectsArray={projectsArray} />
-      <MobileProjects ref={projectsRefMobile} projectsArray={projectsArray} />
-      <Contact ref={contactRef} />
+      <div className='main'>
+        <About ref={aboutRef} />
+        <Story ref={storyRef} />
+        <Skillset ref={skillsetRef} />
+        <Projects ref={projectsRef} projectsArray={projectsArray} />
+        <MobileProjects ref={projectsRefMobile} projectsArray={projectsArray} />
+        <Contact ref={contactRef} />
+      </div>
     </div>
   );
 }

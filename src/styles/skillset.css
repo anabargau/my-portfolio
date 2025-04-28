@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 0 50px 50px;
     gap: 50px;
     position: relative;
 }
@@ -49,5 +49,9 @@
     .icon-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .skillset {
+        padding: 50px;
     }
 }
